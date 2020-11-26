@@ -3,8 +3,10 @@ require_relative '../../../bitcoin_bootstrap_api/source/lambda_function'
 class ApiController < ApplicationController
   def api
     event = {
-      'requestContext' => { 'http' => { 'method' => 'POST' } },
-      'stage' => 'development',
+      'requestContext' => {
+        'http' => { 'method' => 'POST' },
+        'stage' => 'development'
+      },
       'body' => args.to_json
     }
 
