@@ -5,10 +5,8 @@ gem 'aws-sdk-dynamodb'
 gem 'aws-sdk-s3'
 gem 'aws-sdk-sns'
 
-gem 'dotenv-rails', groups: [:development, :test]
-
 gem 'httparty'
-
+gem 'dotenv-rails'
 gem 'awesome_print'
 gem 'byebug'
 gem 'faker'
